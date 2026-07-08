@@ -230,8 +230,8 @@ document.addEventListener("DOMContentLoaded", () => {
       const list = gsap.utils.toArray(targets).filter(el => !el.closest("#services"));
       if (!list.length) return;
       const trigger = opts?.trigger || list[0];
+      /* Transform-only reveals — never hide opacity (Googlebot must read content) */
       gsap.from(list, {
-        opacity: 0,
         ease: "none",
         ...vars,
         scrollTrigger: {
@@ -260,14 +260,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (heroTitle) {
       const words = splitWords(heroTitle);
-      heroTl.from(words, { opacity: 0, y: 40, duration: 1.2, stagger: 0.11 }, 0.2);
+      heroTl.from(words, { y: 40, duration: 1.2, stagger: 0.11 }, 0.2);
     }
 
     heroTl
-      .from("#heroKicker",    { opacity: 0, y: 22, duration: 1.1 }, 0)
-      .from(".hero-lede",     { opacity: 0, y: 28, duration: 1.1 }, 0.8)
-      .from(".hero-actions",  { opacity: 0, y: 28, duration: 1.05 }, 1.0)
-      .from(".hero-trust",    { opacity: 0, y: 22, duration: 1.0 }, 1.2);
+      .from("#heroKicker",    { y: 22, duration: 1.1 }, 0)
+      .from(".hero-lede",     { y: 28, duration: 1.1 }, 0.8)
+      .from(".hero-actions",  { y: 28, duration: 1.05 }, 1.0)
+      .from(".hero-trust",    { y: 22, duration: 1.0 }, 1.2);
 
     /* ─── 3. GENERIC SCROLL REVEALS ─────────────────────────── */
     const BATCH_SELECTORS = [
@@ -296,7 +296,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     gsap.utils.toArray(".gsap-fade").forEach(el => {
       if (el.closest("#home") || el.closest("#services") || isHandledByBatch(el)) return;
-      reveal(el, {});
+      reveal(el, { y: 20 });
     });
 
     gsap.utils.toArray(".gsap-scale").forEach(el => {
@@ -367,7 +367,7 @@ document.addEventListener("DOMContentLoaded", () => {
     /* ─── 11. CHIP GRIDS (services section stays always visible) ─ */
     document.querySelectorAll(".chip-grid").forEach(cg => {
       if (cg.closest("#services")) return;
-      reveal(cg.querySelectorAll(".chip"), { opacity: 0, scale: 0.9, stagger: 0.04 }, {
+      reveal(cg.querySelectorAll(".chip"), { scale: 0.92, stagger: 0.04 }, {
         trigger: cg,
         end: "top 58%",
       });
