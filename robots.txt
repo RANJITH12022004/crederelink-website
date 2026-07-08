@@ -1,4 +1,10 @@
 User-agent: *
 Allow: /
 
+# Redirect stub pages are noindex — main content is on the homepage SPA
+Disallow: /services.html
+Disallow: /features.html
+Disallow: /about.html
+Disallow: /contact.html
+
 Sitemap: https://crederelinkfintech.com/sitemap.xml

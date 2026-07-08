@@ -120,6 +120,33 @@ function splitWords(element) {
   return element.querySelectorAll(".word");
 }
 
+/* ── SHOW ALL CONTENT (crawlers, reduced-motion, GSAP fallback) ─ */
+function showAllContent() {
+  document.querySelectorAll(
+    ".gsap-fade,.gsap-up,.gsap-left,.gsap-right,.gsap-scale,.word"
+  ).forEach(el => {
+    el.style.opacity = "1";
+    el.style.transform = "none";
+  });
+  document.querySelectorAll(".eyebrow").forEach(e => e.classList.add("animated"));
+  document.querySelectorAll(".process-step").forEach(e => e.classList.add("revealed"));
+  document.getElementById("processTrack")?.classList.add("line-done");
+  document.querySelectorAll(".value-card").forEach(e => e.classList.add("revealed"));
+  document.querySelectorAll(".tl-item").forEach(e => e.classList.add("done"));
+  document.querySelectorAll(
+    "#services .service-head, #services .service-cta, #services .chip, #services .offering, #services .section-head"
+  ).forEach(el => {
+    el.style.opacity = "1";
+    el.style.transform = "none";
+  });
+}
+
+function isSearchCrawler() {
+  return /googlebot|google-inspectiontool|bingbot|slurp|duckduckbot|baiduspider|yandexbot|facebot|facebookexternalhit|twitterbot|linkedinbot/i.test(
+    navigator.userAgent
+  );
+}
+
 /* ── CONTACT FORM ───────────────────────────────────────────── */
 (function () {
   const form   = document.getElementById("contactForm");
@@ -173,13 +200,9 @@ function splitWords(element) {
 ══════════════════════════════════════════════════════════════ */
 document.addEventListener("DOMContentLoaded", () => {
 
-  /* Respect reduced-motion immediately */
-  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-    document.querySelectorAll(".eyebrow").forEach(e => e.classList.add("animated"));
-    document.querySelectorAll(".process-step").forEach(e => e.classList.add("revealed"));
-    document.getElementById("processTrack")?.classList.add("line-done");
-    document.querySelectorAll(".value-card").forEach(e => e.classList.add("revealed"));
-    document.querySelectorAll(".tl-item").forEach(e => e.classList.add("done"));
+  /* Crawlers and reduced-motion: skip scroll animations so content is visible */
+  if (isSearchCrawler() || window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    showAllContent();
     return;
   }
 
