@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crederelink Fintech — Trade Finance, Credit Structuring &amp; Institutional Lending Solutions</title>
+  <meta name="description" content="Crederelink Fintech provides institutional-grade trade finance, credit advisory, and underwriting services. Specialized in Supply Chain Finance, LC/BG Discounting, Credit Rating Advisory, CIBIL Audit, and Capital Structuring. Based in Hyderabad, India.">
+  <link rel="canonical" href="https://crederelinkfintech.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Crederelink Fintech">
+  <meta property="og:title" content="Crederelink Fintech — Trade Finance, Credit Structuring &amp; Institutional Lending">
+  <meta property="og:description" content="Institutional-grade trade finance, credit advisory, and underwriting services for enterprises and lenders. Hyderabad, India.">
+  <meta property="og:url" content="https://crederelinkfintech.com/">
+  <meta property="og:image" content="https://crederelinkfintech.com/assets/apple-touch-icon.png">
+  <meta name="twitter:card" content="summary">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+
+  <!-- Apply saved theme before paint to avoid flash -->
+  <script>(function(){try{var t=localStorage.getItem("cl-theme");document.documentElement.setAttribute("data-theme",t||"dark");}catch(e){document.documentElement.setAttribute("data-theme","dark");}})();</script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..500&family=Fraunces:ital,opsz,wght@0,9..144,400..600;1,9..144,400..500&display=swap" rel="stylesheet">
+
+  <!-- GSAP + ScrollTrigger -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!-- Inline SVG sprite ─────────────────────────────────────── -->
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true" focusable="false">
+<symbol id="file-badge" viewBox="0 0 24 24"><path d="M12 22h6a2 2 0 0 0 2-2V7l-5-5H6a2 2 0 0 0-2 2v3"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M5 17a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/><path d="M7 16.5 8 22l-3-1-3 1 1-5.5"/></symbol>
+<symbol id="landmark" viewBox="0 0 24 24"><line x1="3" x2="21" y1="22" y2="22"/><line x1="6" x2="6" y1="18" y2="11"/><line x1="10" x2="10" y1="18" y2="11"/><line x1="14" x2="14" y1="18" y2="11"/><line x1="18" x2="18" y1="18" y2="11"/><polygon points="12 2 20 7 4 7"/></symbol>
+<symbol id="receipt" viewBox="0 0 24 24"><path d="M4 2v20l2-1 2 1 2-1 2 1 2-1 2 1 2-1 2 1V2l-2 1-2-1-2 1-2-1-2 1-2-1-2 1Z"/><path d="M8 7h8"/><path d="M8 11h8"/><path d="M12 17.5 8 15h1a4 4 0 0 0 0-8"/></symbol>
+<symbol id="file-up" viewBox="0 0 24 24"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M12 18v-6"/><path d="m15 15-3-3-3 3"/></symbol>
+<symbol id="globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></symbol>
+<symbol id="search-check" viewBox="0 0 24 24"><path d="m8 11 2 2 4-4"/><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></symbol>
+<symbol id="chart" viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M18 17V9"/><path d="M13 17V5"/><path d="M8 17v-3"/></symbol>
+<symbol id="gauge" viewBox="0 0 24 24"><path d="m12 14 4-4"/><path d="M3.34 19a10 10 0 1 1 17.32 0"/></symbol>
+<symbol id="file-search" viewBox="0 0 24 24"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><circle cx="11.5" cy="14.5" r="2.5"/><path d="M13.3 16.3 15 18"/></symbol>
+<symbol id="coins" viewBox="0 0 24 24"><circle cx="8" cy="8" r="6"/><path d="M18.09 10.37A6 6 0 1 1 10.34 18"/><path d="M7 6h1v4"/><path d="m16.71 13.88.7.71-2.82 2.82"/></symbol>
+<symbol id="handshake" viewBox="0 0 24 24"><path d="m11 17 2 2a1 1 0 1 0 3-3"/><path d="m14 14 2.5 2.5a1 1 0 1 0 3-3l-3.88-3.88a3 3 0 0 0-4.24 0l-.88.88a1 1 0 1 1-3-3l2.81-2.81a5.79 5.79 0 0 1 7.06-.87l.47.28a2 2 0 0 0 1.42.25L21 4"/><path d="m21 3 1 11h-2"/><path d="M3 3 2 14l6.5 6.5a1 1 0 1 0 3-3"/><path d="M3 4h8"/></symbol>
+<symbol id="list-checks" viewBox="0 0 24 24"><path d="m3 17 2 2 4-4"/><path d="m3 7 2 2 4-4"/><path d="M13 6h8"/><path d="M13 12h8"/><path d="M13 18h8"/></symbol>
+<symbol id="briefcase" viewBox="0 0 24 24"><path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/><rect width="20" height="14" x="2" y="6" rx="2"/></symbol>
+<symbol id="building" viewBox="0 0 24 24"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/><path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"/><path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"/><path d="M10 6h4"/><path d="M10 10h4"/><path d="M10 14h4"/><path d="M10 18h4"/></symbol>
+<symbol id="ship" viewBox="0 0 24 24"><path d="M12 10.189V14"/><path d="M12 2v3"/><path d="M19 13V7a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v6"/><path d="M19.38 20A11.6 11.6 0 0 0 21 14l-8.188-3.639a2 2 0 0 0-1.624 0L3 14a11.6 11.6 0 0 0 1.62 6"/><path d="M2 21c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1s1.2 1 2.5 1c2.5 0 2.5-2 5-2 1.3 0 1.9.5 2.5 1"/></symbol>
+<symbol id="layers" viewBox="0 0 24 24"><path d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z"/><path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65"/><path d="m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65"/></symbol>
+<symbol id="compass" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></symbol>
+<symbol id="shield-check" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></symbol>
+<symbol id="sliders" viewBox="0 0 24 24"><line x1="4" x2="4" y1="21" y2="14"/><line x1="4" x2="4" y1="10" y2="3"/><line x1="12" x2="12" y1="21" y2="12"/><line x1="12" x2="12" y1="8" y2="3"/><line x1="20" x2="20" y1="21" y2="16"/><line x1="20" x2="20" y1="12" y2="3"/><line x1="2" x2="6" y1="14" y2="14"/><line x1="10" x2="14" y1="8" y2="8"/><line x1="18" x2="22" y1="16" y2="16"/></symbol>
+<symbol id="timer" viewBox="0 0 24 24"><line x1="10" x2="14" y1="2" y2="2"/><line x1="12" x2="15" y1="14" y2="11"/><circle cx="12" cy="14" r="8"/></symbol>
+<symbol id="eye" viewBox="0 0 24 24"><path d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0"/><circle cx="12" cy="12" r="3"/></symbol>
+<symbol id="milestone" viewBox="0 0 24 24"><path d="M12 13v8"/><path d="M12 3v3"/><path d="M4 6a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1h13a2 2 0 0 0 1.152-.365l3.424-2.317a1 1 0 0 0 0-1.635l-3.424-2.318A2 2 0 0 0 17 6z"/></symbol>
+<symbol id="file-check" viewBox="0 0 24 24"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="m9 15 2 2 4-4"/></symbol>
+<symbol id="target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></symbol>
+<symbol id="trending-up" viewBox="0 0 24 24"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></symbol>
+<symbol id="scale" viewBox="0 0 24 24"><path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="M7 21h10"/><path d="M12 3v18"/><path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2"/></symbol>
+<symbol id="users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+<symbol id="award" viewBox="0 0 24 24"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></symbol>
+<symbol id="map-pin" viewBox="0 0 24 24"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></symbol>
+<symbol id="mail" viewBox="0 0 24 24"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></symbol>
+<symbol id="phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+<symbol id="clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></symbol>
+<symbol id="arrow-right" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></symbol>
+<symbol id="check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+<symbol id="sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></symbol>
+<symbol id="moon" viewBox="0 0 24 24"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></symbol>
+</svg>
+
+<a class="skip-link" href="#home">Skip to content</a>
+
+<!-- ═══════════════════════════════════════════════════════════
+     HEADER
+═══════════════════════════════════════════════════════════ -->
+<header class="site-header" id="siteHeader">
+  <div class="header-inner">
+    <a href="#home" class="brand" aria-label="Crederelink Fintech home">
+      <img src="assets/logo-mark.png" alt="" class="brand-mark" width="36" height="36">
+      <span class="brand-name">Crederelink<em>Fintech</em></span>
+    </a>
+
+    <nav class="site-nav" id="siteNav" aria-label="Primary navigation">
+      <a href="#home"     class="nav-link" data-section="home">Home</a>
+      <a href="#services" class="nav-link" data-section="services">Services</a>
+      <a href="#features" class="nav-link" data-section="features">Features</a>
+      <a href="#about"    class="nav-link" data-section="about">About</a>
+      <a href="#contact"  class="nav-link" data-section="contact">Contact</a>
+      <a href="#contact"  class="btn btn-primary btn-sm nav-cta">Get in touch</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="icon-btn" id="themeToggle" aria-label="Switch colour theme">
+        <svg class="icon icon-moon" aria-hidden="true"><use href="#moon"/></svg>
+        <svg class="icon icon-sun"  aria-hidden="true"><use href="#sun"/></svg>
+      </button>
+      <button class="icon-btn nav-toggle" id="navToggle"
+              aria-expanded="false" aria-controls="siteNav" aria-label="Toggle navigation">
+        <span class="nav-toggle-bars"></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Section progress dots -->
+<nav class="section-progress" id="sectionProgress" aria-label="Page sections">
+  <button class="sp-dot active" data-target="home"     aria-label="Home"></button>
+  <button class="sp-dot"        data-target="services" aria-label="Services"></button>
+  <button class="sp-dot"        data-target="features" aria-label="Features"></button>
+  <button class="sp-dot"        data-target="about"    aria-label="About"></button>
+  <button class="sp-dot"        data-target="contact"  aria-label="Contact"></button>
+</nav>
+
+<main>
+
+<!-- ═══════════════════════════════════════════════════════════
+     §1 HERO
+═══════════════════════════════════════════════════════════ -->
+<section id="home" aria-label="Hero">
+  <div class="hero-mark" aria-hidden="true"></div>
+  <div class="wrap hero-inner">
+    <p class="hero-kicker" id="heroKicker">
+      <span class="hero-kicker-line" aria-hidden="true"></span>
+      <span class="hero-kicker-text">For enterprises and institutional lenders across India</span>
+    </p>
+
+    <h1 class="hero-title" id="heroTitle">
+      Trade finance,<br>
+      credit structuring &amp;<br>
+      <span class="hi">institutional lending</span>
+    </h1>
+
+    <p class="hero-lede">
+      Institutional-grade financial advisory and credit services.
+      Specialized in supply chain finance, credit risk assessment,
+      underwriting, and capital structuring for enterprises and lenders.
+    </p>
+
+    <div class="hero-actions">
+      <a href="#services" class="btn btn-primary btn-lg">
+        Explore services
+        <svg class="icon" aria-hidden="true"><use href="#arrow-right"/></svg>
+      </a>
+      <a href="#contact" class="btn btn-outline btn-lg">Contact us</a>
+    </div>
+
+    <ul class="hero-trust">
+      <li class="hero-trust-item">
+        <svg class="icon" aria-hidden="true"><use href="#map-pin"/></svg>
+        Based in Hyderabad, serving India
+      </li>
+      <li class="hero-trust-item">
+        <svg class="icon" aria-hidden="true"><use href="#shield-check"/></svg>
+        Documentation-led, risk-minimized process
+      </li>
+      <li class="hero-trust-item">
+        <svg class="icon" aria-hidden="true"><use href="#handshake"/></svg>
+        Built for enterprises and lenders
+      </li>
+    </ul>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- ═══════════════════════════════════════════════════════════
+     §2 PROCESS RAIL
+═══════════════════════════════════════════════════════════ -->
+<section class="section s-mid" aria-label="How we work">
+  <div class="wrap">
+    <div class="section-head gsap-up">
+      <p class="eyebrow"><span class="eyebrow-line"></span>How we work</p>
+      <h2>A five-step progressive workflow</h2>
+      <p class="lede">Every engagement follows the same disciplined path — from first conversation to funds in the account.</p>
+    </div>
+
+    <div class="process-outer">
+      <ol class="process-track" id="processTrack">
+        <li class="process-step">
+          <div class="process-num">01</div>
+          <h4>Client profiling</h4>
+          <p>Understanding the business, its financials, and the funding requirement.</p>
+        </li>
+        <li class="process-step">
+          <div class="process-num">02</div>
+          <h4>Documentation &amp; solutioning</h4>
+          <p>Structuring the right solution and assembling a lender-ready file.</p>
+        </li>
+        <li class="process-step">
+          <div class="process-num">03</div>
+          <h4>Mandate closure</h4>
+          <p>Agreeing scope, terms, and timelines before the deal moves forward.</p>
+        </li>
+        <li class="process-step">
+          <div class="process-num">04</div>
+          <h4>Lender submission</h4>
+          <p>Presenting a pre-vetted profile to matched lenders for faster review.</p>
+        </li>
+        <li class="process-step">
+          <div class="process-num">05</div>
+          <h4>Disbursal coordination</h4>
+          <p>Managing approvals and documentation through to disbursement.</p>
+        </li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- ═══════════════════════════════════════════════════════════
+     §3 SERVICE PILLARS (home preview)
+═══════════════════════════════════════════════════════════ -->
+<section class="section s-dark" aria-label="Our services overview">
+  <div class="wrap">
+    <div class="section-head gsap-up">
+      <p class="eyebrow"><span class="eyebrow-line"></span>What we do</p>
+      <h2>Our services</h2>
+      <p class="lede">Institutional-grade financial solutions for enterprises and lenders.</p>
+    </div>
+
+    <div class="pillar-grid">
+      <article class="pillar-card gsap-up">
+        <span class="pillar-icon-wrap">
+          <svg class="icon" aria-hidden="true"><use href="#ship"/></svg>
+        </span>
+        <h3>Supply Chain &amp; Trade Finance</h3>
+        <p>Letter of Credit discounting, Bank Guarantee discounting, Purchase &amp; Sales Invoice discounting, and Import/Export working capital solutions.</p>
+        <a href="#services" class="text-link">
+          Learn more <svg class="icon" aria-hidden="true"><use href="#arrow-right"/></svg>
+        </a>
+      </article>
+
+      <article class="pillar-card gsap-up" style="--reveal-delay:0.1s">
+        <span class="pillar-icon-wrap">
+          <svg class="icon" aria-hidden="true"><use href="#search-check"/></svg>
+        </span>
+        <h3>Credit &amp; Risk Services</h3>
+        <p>Institutional-grade underwriting, deep financial analysis, credit rating advisory, and CIBIL audit with error rectification services.</p>
+        <a href="#services" class="text-link">
+          Learn more <svg class="icon" aria-hidden="true"><use href="#arrow-right"/></svg>
+        </a>
+      </article>
+
+      <article class="pillar-card gsap-up" style="--reveal-delay:0.2s">
+        <span class="pillar-icon-wrap">
+          <svg class="icon" aria-hidden="true"><use href="#coins"/></svg>
+        </span>
+        <h3>Advisory &amp; Consulting</h3>
+        <p>Capital structuring, fund raising, lender matching, deal structuring, and end-to-end loan processing support for enterprises.</p>
+        <a href="#services" class="text-link">
+          Learn more <svg class="icon" aria-hidden="true"><use href="#arrow-right"/></svg>
+        </a>
+      </article>
+    </div>
+
+    <div class="chip-grid" style="margin-top:2rem">
+      <a href="#services" class="chip">Unsecured Loans</a>
+      <a href="#services" class="chip">Project Loans</a>
+      <a href="#services" class="chip">Exporter &amp; Importer Finance</a>
+      <a href="#services" class="chip">Other Specialized Loans</a>
+      <a href="#services" class="chip">Allied Financial Services</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+     §4 WHY US
+═══════════════════════════════════════════════════════════ -->
+<section class="section s-raised" aria-label="Why Crederelink">
+  <div class="wrap">
+    <div class="feature-split">
+      <div class="feature-split-intro">
+        <p class="eyebrow gsap-up"><span class="eyebrow-line"></span>Why Crederelink</p>
+        <h2 class="gsap-up">Why we stand out</h2>
+        <p class="lede gsap-up">Institutional-grade processes designed for enterprise clients and lenders.</p>
+        <a href="#features" class="text-link gsap-up">
+          See all features <svg class="icon" aria-hidden="true"><use href="#arrow-right"/></svg>
+        </a>
+      </div>
+      <div class="feature-list">
+        <div class="feature-row gsap-left">
+          <span class="icon-badge"><svg class="icon" aria-hidden="true"><use href="#sliders"/></svg></span>
+          <div>
+            <h4>Personalized structuring</h4>
+            <p>Tailored financial solutions designed per client requirement with risk-optimized capital structures.</p>
+          </div>
+        </div>
+        <div class="feature-row gsap-left">
+          <span class="icon-badge"><svg class="icon" aria-hidden="true"><use href="#shield-check"/></svg></span>
+          <div>
+            <h4>Risk-minimized process</h4>
+            <p>Documentation-led approval flow with institutional-grade underwriting and credit assessment.</p>
+          </div>
+        </div>
+        <div class="feature-row gsap-left">
+          <span class="icon-badge"><svg class="icon" aria-hidden="true"><use href="#timer"/></svg></span>
+          <div>
+            <h4>Faster processing</h4>
+            <p>Pre-vetted profiles and streamlined documentation accelerate lender processing and approval timelines.</p>
+          </div>
+        </div>
+        <div class="feature-row gsap-left">
+          <span class="icon-badge"><svg class="icon" aria-hidden="true"><use href="#eye"/></svg></span>
+          <div>
+            <h4>Transparent tracking</h4>
+            <p>Real-time deal tracking with clear milestones and documentation status throughout the financing workflow.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- ═══════════════════════════════════════════════════════════
+     §5 FULL SERVICES
+═══════════════════════════════════════════════════════════ -->
+<section id="services" class="section s-dark" aria-label="Services">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow"><span class="eyebrow-line"></span>Services</p>
+      <h2>Our financial services</h2>
+      <p class="lede">Supply Chain &amp; Trade Finance · Credit &amp; Risk Services · Advisory &amp; Consulting</p>
+    </div>
+
+    <div class="services-layout">
+      <!-- TOC -->
+      <nav class="services-toc" aria-label="Service sections">
+        <p class="toc-label">On this page</p>
+        <a href="#supply-chain">Supply Chain &amp; Trade Finance</a>
+        <a href="#credit-risk">Credit &amp; Risk Services</a>
+        <a href="#advisory">Advisory &amp; Consulting</a>
+        <a href="#unsecured">Unsecured Loans</a>
+        <a href="#project">Project Loans</a>
+        <a href="#exporter">Exporter &amp; Importer Finance</a>
+        <a href="#specialized">Other Specialized Loans</a>
+        <a href="#allied">Allied Financial Services</a>
+      </nav>
+
+      <div>
+
+        <!-- Supply Chain & Trade Finance -->
+        <div class="service-block" id="supply-chain">
+          <div class="service-head">
+            <span class="service-head-icon"><svg class="icon" aria-hidden="true"><use href="#ship"/></svg></span>
+            <div>
+              <h2>Supply Chain &amp; Trade Finance</h2>
+              <p>Optimize working capital and accelerate trade cycles with institutional-grade supply chain financing solutions.</p>
+            </div>
+          </div>
+          <div class="offering-grid">
+            <article class="offering">
+              <div class="offering-title"><svg class="icon" aria-hidden="true"><use href="#file-badge"/></svg><h3>Letter of Credit (LC) Discounting</h3></div>
+              <p>Unlock liquidity from confirmed LCs with competitive discounting rates and streamlined documentation.</p>
+              <ul class="checklist"><li><svg class="icon" aria-hidden="true"><use href="#check"/></svg>Fast processing with pre-approved limits</li><li><svg class="icon" aria-hidden="true"><use href="#check"/></svg>Competitive discounting rates</li><li><svg class="icon" aria-hidden="true"><use href="#check"/></svg>End-to-end documentation support</li></ul>
+            </article>
+            <article class="offering">
+              <div class="offering-title"><svg class="icon" aria-hidden="true"><use href="#landmark"/></svg><h3>Bank Guarantee (BG) Discounting</h3></div>
+              <p>Monetize unused bank guarantees to improve cash flow and working capital efficiency.</p>
+              <ul class="checklist"><li><svg class="icon" aria-hidden="true"><use href="#check"/></svg>Unused BG discounting only</li><li><svg class="icon" aria-hidden="true"><use href="#check"/></svg>Quick valuation and approval</li><li><svg class="icon" aria-hidden="true"><use href="#check"/></svg>Flexible repayment structures</li></ul>
+            </article>
+            <article class="offering">
+              <div class="offering-title"><svg class="icon" aria-hidden="true"><use href="#receipt"/></svg><h3>Purchase Invoice Discounting</h3></div>
+              <p>Convert purchase invoices into immediate working capital with buyer-verified discounting solutions.</p>
+              <ul class="checklist"><li><svg class="icon" aria-hidden="true"><use href="#check"/></svg>Buyer verification and approval</li><li><svg class="icon" aria-hidden="true"><use href="#check"/></svg>Flexible discounting terms</li><li><svg class="icon" aria-hidden="true"><use href="#check"/></svg>Real-time tracking and reporting</li></ul>
+            </article>
+            <article class="offering">
+              <div class="offering-title"><svg class="icon" aria-hidden="true"><use href="#file-up"/></svg><h3>Sales Invoice / Order Bill Discounting</h3></div>
+              <p>Accelerate receivables collection by discounting sales invoices and confirmed order bills.</p>
+              <ul class="checklist"><li><svg class="icon" aria-hidden="true"><use href="#check"/></svg>Confirmed order bill financing</li><li><svg class="icon" aria-hidden="true"><use href="#check"/></svg>Sales invoice discounting</li><li><svg class="icon" aria-hidden="true"><use href="#check"/></svg>Credit period optimization</li></ul>
+            </article>
+            <article class="offering">
+              <div class="offering-title"><svg class="icon" aria-hidden="true"><use href="#globe"/></svg><h3>Import &amp; Export Working Capital (Unsecured)</h3></div>
+              <p>Unsecured working capital solutions for importers and exporters to support international trade operations.</p>
+              <ul class="checklist"><li><svg class="icon" aria-hidden="true"><use href="#check"/></svg>Pre and post-shipment financing</li><li><svg class="icon" aria-hidden="true"><use href="#check"/></svg>No collateral requirements</li><li><svg class="icon" aria-hidden="true"><use href="#check"/></svg>Trade cycle optimization</li></ul>
+            </article>
+          </div>
+        </div>
+
+        <!-- Credit & Risk -->
+        <div class="service-block" id="credit-risk">
+          <div class="service-head">
+            <span class="service-head-icon"><svg class="icon" aria-hidden="true"><use href="#search-check"/></svg></span>
+            <div>
+              <h2>Credit &amp; Risk Services</h2>
+              <p>Institutional-grade credit assessment, risk analysis, and credit health management services.</p>
+            </div>
+          </div>
+          <div class="offering-grid">
+            <article class="offering">
+              <div class="offering-title"><svg class="icon" aria-hidden="true"><use href="#search-check"/></svg><h3>Institutional-Grade Underwriting</h3></div>
+              <p>Comprehensive credit underwriting with deep financial analysis and risk assessment for lenders and enterprises.</p>
+              <ul class="checklist"><li><svg class="icon" aria-hidden="true"><use href="#check"/></svg>Multi-dimensional credit analysis</li><li><svg class="icon" aria-hidden="true"><use href="#check"/></svg>Risk scoring and rating models</li><li><svg class="icon" aria-hidden="true"><use href="#check"/></svg>Lender-ready credit reports</li></ul>
+            </article>
+            <article class="offering">
+              <div class="offering-title"><svg class="icon" aria-hidden="true"><use href="#chart"/></svg><h3>Deep Financial Analysis &amp; Credit Review</h3></div>
+              <p>Comprehensive financial statement analysis, cash flow assessment, and creditworthiness evaluation.</p>
+              <ul class="checklist"><li><svg class="icon" aria-hidden="true"><use href="#check"/></svg>Financial statement deep-dive</li><li><svg class="icon" aria-hidden="true"><use href="#check"/></svg>Cash flow and liquidity analysis</li><li><svg class="icon" aria-hidden="true"><use href="#check"/></svg>Business viability assessment</li></ul>
+            </article>
+            <article class="offering">
+              <div class="offering-title"><svg class="icon" aria-hidden="true"><use href="#gauge"/></svg><h3>External Credit Rating Advisory</h3></div>
+              <p>Expert guidance on credit rating improvement and external rating agency engagement strategies.</p>
+              <ul class="checklist"><li><svg class="icon" aria-hidden="true"><use href="#check"/></svg>Rating improvement roadmap</li><li><svg class="icon" aria-hidden="true"><use href="#check"/></svg>Agency engagement support</li><li><svg class="icon" aria-hidden="true"><use href="#check"/></svg>Rating maintenance strategies</li></ul>
+            </article>
+            <article class="offering">
+              <div class="offering-title"><svg class="icon" aria-hidden="true"><use href="#file-search"/></svg><h3>CIBIL Audit, Error Rectification &amp; Credit Restoration</h3></div>
+              <p>Comprehensive CIBIL audit, error identification, dispute resolution, and credit profile restoration services.</p>
+              <ul class="checklist"><li><svg class="icon" aria-hidden="true"><use href="#check"/></svg>Complete CIBIL report audit</li><li><svg class="icon" aria-hidden="true"><use href="#check"/></svg>Error identification and rectification</li><li><svg class="icon" aria-hidden="true"><use href="#check"/></svg>Credit score improvement strategies</li></ul>
+            </article>
+          </div>
+        </div>
+
+        <!-- Advisory -->
+        <div class="service-block" id="advisory">
+          <div class="service-head">
+            <span class="service-head-icon"><svg class="icon" aria-hidden="true"><use href="#coins"/></svg></span>
+            <div>
+              <h2>Advisory &amp; Consulting</h2>
+              <p>Strategic financial advisory and end-to-end support for capital raising and deal structuring.</p>
+            </div>
+          </div>
+          <div class="offering-grid">
+            <article class="offering">
+              <div class="offering-title"><svg class="icon" aria-hidden="true"><use href="#coins"/></svg><h3>Capital Structuring &amp; Fund Raising</h3></div>
+              <p>Optimal capital structure design and fund raising strategies tailored to business requirements.</p>
+              <ul class="checklist"><li><svg class="icon" aria-hidden="true"><use href="#check"/></svg>Capital structure optimization</li><li><svg class="icon" aria-hidden="true"><use href="#check"/></svg>Fund raising strategy development</li><li><svg class="icon" aria-hidden="true"><use href="#check"/></svg>Investor pitch preparation</li></ul>
+            </article>
+            <article class="offering">
+              <div class="offering-title"><svg class="icon" aria-hidden="true"><use href="#handshake"/></svg><h3>Lender Matching &amp; Deal Structuring</h3></div>
+              <p>Strategic lender identification, matching, and deal structuring to optimize terms and approval probability.</p>
+              <ul class="checklist"><li><svg class="icon" aria-hidden="true"><use href="#check"/></svg>Lender network access</li><li><svg class="icon" aria-hidden="true"><use href="#check"/></svg>Deal term optimization</li><li><svg class="icon" aria-hidden="true"><use href="#check"/></svg>Structured financing solutions</li></ul>
+            </article>
+            <article class="offering">
+              <div class="offering-title"><svg class="icon" aria-hidden="true"><use href="#list-checks"/></svg><h3>End-to-End Loan Processing Support</h3></div>
+              <p>Complete support throughout the loan lifecycle from application to disbursement and closure.</p>
+              <ul class="checklist"><li><svg class="icon" aria-hidden="true"><use href="#check"/></svg>Documentation management</li><li><svg class="icon" aria-hidden="true"><use href="#check"/></svg>Application processing support</li><li><svg class="icon" aria-hidden="true"><use href="#check"/></svg>Disbursement coordination</li></ul>
+            </article>
+          </div>
+        </div>
+
+        <!-- Unsecured Loans -->
+        <div class="service-block" id="unsecured">
+          <div class="service-head">
+            <span class="service-head-icon"><svg class="icon" aria-hidden="true"><use href="#briefcase"/></svg></span>
+            <div><h2>Unsecured Loans</h2><p>Quick access to capital without collateral requirements. Ideal for businesses seeking flexible financing with fast approval.</p></div>
+          </div>
+          <div class="chip-grid">
+            <span class="chip">Business Loan</span><span class="chip">Dropline Overdraft</span><span class="chip">Machine Loan</span><span class="chip">MSME Loan</span><span class="chip">Capital Loan</span><span class="chip">Construction Equipment Loan</span><span class="chip">Supply Chain Finance</span><span class="chip">Dealer Finance</span><span class="chip">Vendor Finance</span><span class="chip">Startup Loan</span><span class="chip">Stand Up Loan</span><span class="chip">Medical Equipment Loan</span><span class="chip">Factoring Finance</span>
+          </div>
+          <div class="service-cta"><a href="#contact" class="text-link">Discuss an unsecured loan <svg class="icon" aria-hidden="true"><use href="#arrow-right"/></svg></a></div>
+        </div>
+
+        <!-- Project Loans -->
+        <div class="service-block service-block--compact" id="project">
+          <div class="service-head">
+            <span class="service-head-icon"><svg class="icon" aria-hidden="true"><use href="#building"/></svg></span>
+            <div><h2>Project Loans</h2><p>Large-scale funding for infrastructure, industrial setups, and long-term capital projects.</p></div>
+          </div>
+          <div class="service-cta"><a href="#contact" class="text-link">Discuss project funding <svg class="icon" aria-hidden="true"><use href="#arrow-right"/></svg></a></div>
+        </div>
+
+        <!-- Exporter & Importer -->
+        <div class="service-block" id="exporter">
+          <div class="service-head">
+            <span class="service-head-icon"><svg class="icon" aria-hidden="true"><use href="#globe"/></svg></span>
+            <div><h2>Exporter &amp; Importer Finance</h2><p>Specialized trade finance solutions for international business operations with competitive rates.</p></div>
+          </div>
+          <div class="chip-grid">
+            <span class="chip">Pre Shipment Credit (INR)</span><span class="chip">Post Shipment Credit (INR)</span><span class="chip">Pre Shipment Credit (Fx)</span><span class="chip">Post Shipment Credit (Fx)</span><span class="chip">Supplier Credit</span><span class="chip">Export Project Finance</span><span class="chip">Export Bill Discounting</span><span class="chip">Foreign Currency Term Loan</span><span class="chip">SBLC (Standby Letter of Credit)</span><span class="chip">Packing Credit Limit</span><span class="chip">Buyer Credit</span>
+          </div>
+          <div class="service-cta"><a href="#contact" class="text-link">Discuss trade finance <svg class="icon" aria-hidden="true"><use href="#arrow-right"/></svg></a></div>
+        </div>
+
+        <!-- Specialized -->
+        <div class="service-block" id="specialized">
+          <div class="service-head">
+            <span class="service-head-icon"><svg class="icon" aria-hidden="true"><use href="#layers"/></svg></span>
+            <div><h2>Other Specialized Loans</h2><p>Customized financing solutions for unique business requirements. Tailored lending products for specialized needs.</p></div>
+          </div>
+          <div class="chip-grid">
+            <span class="chip">NBFC Funding</span><span class="chip">Promoter Funding Share</span><span class="chip">Venture Debt</span><span class="chip">Sale Bill Discounting</span><span class="chip">Purchase Bill Discounting</span><span class="chip">Debt Consolidation</span><span class="chip">Stress Assets Finance</span>
+          </div>
+          <div class="service-cta"><a href="#contact" class="text-link">Discuss specialized lending <svg class="icon" aria-hidden="true"><use href="#arrow-right"/></svg></a></div>
+        </div>
+
+        <!-- Allied -->
+        <div class="service-block" id="allied">
+          <div class="service-head">
+            <span class="service-head-icon"><svg class="icon" aria-hidden="true"><use href="#compass"/></svg></span>
+            <div><h2>Allied Financial Services</h2><p>Comprehensive support services to help you navigate complex financial requirements.</p></div>
+          </div>
+          <div class="chip-grid">
+            <span class="chip">Subsidy Consultancy</span><span class="chip">CMA Data Preparation</span><span class="chip">Project Report Documentation</span><span class="chip">Investment Teaser Creation</span>
+          </div>
+          <div class="service-cta"><a href="#contact" class="text-link">Discuss allied services <svg class="icon" aria-hidden="true"><use href="#arrow-right"/></svg></a></div>
+        </div>
+
+      </div><!-- /services content -->
+    </div><!-- /services-layout -->
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- ═══════════════════════════════════════════════════════════
+     §6 FEATURES
+═══════════════════════════════════════════════════════════ -->
+<section id="features" class="section s-mid" aria-label="Platform features">
+  <div class="wrap">
+    <div class="section-head gsap-up">
+      <p class="eyebrow"><span class="eyebrow-line"></span>Features</p>
+      <h2>Institutional-grade platform features</h2>
+      <p class="lede">Enterprise-focused features designed for risk-minimized, documentation-led financing workflows with transparent tracking and compliance.</p>
+    </div>
+
+    <div class="feature-card-grid" style="margin-bottom: clamp(3.5rem,7vw,5.5rem)">
+      <article class="feature-card gsap-up"><span class="icon-badge"><svg class="icon" aria-hidden="true"><use href="#sliders"/></svg></span><h3>Personalized Financial Structuring</h3><p>Tailored capital structures designed per client requirement with risk-optimized financing solutions aligned to business objectives.</p></article>
+      <article class="feature-card gsap-up"><span class="icon-badge"><svg class="icon" aria-hidden="true"><use href="#shield-check"/></svg></span><h3>Risk-Minimized Approval Flow</h3><p>Documentation-led process with institutional-grade underwriting and comprehensive credit assessment to minimize risk exposure.</p></article>
+      <article class="feature-card gsap-up"><span class="icon-badge"><svg class="icon" aria-hidden="true"><use href="#timer"/></svg></span><h3>Faster Lender Processing</h3><p>Pre-vetted profiles and streamlined documentation accelerate lender review cycles and improve approval timelines.</p></article>
+      <article class="feature-card gsap-up"><span class="icon-badge"><svg class="icon" aria-hidden="true"><use href="#eye"/></svg></span><h3>Transparent Deal Tracking</h3><p>Real-time visibility into deal milestones, documentation status, and approval progress throughout the financing workflow.</p></article>
+      <article class="feature-card gsap-up"><span class="icon-badge"><svg class="icon" aria-hidden="true"><use href="#file-check"/></svg></span><h3>Compliance &amp; Documentation</h3><p>End-to-end documentation management ensuring regulatory compliance and lender-ready submission packages.</p></article>
+      <article class="feature-card gsap-up"><span class="icon-badge"><svg class="icon" aria-hidden="true"><use href="#milestone"/></svg></span><h3>5-Step Progressive Workflow</h3><p>Structured process: client profiling, documentation &amp; solutioning, mandate closure, lender submission, and disbursal coordination.</p></article>
+    </div>
+
+    <!-- Workflow timeline -->
+    <div class="section-head center gsap-up" style="margin-bottom: clamp(2.5rem,5vw,4rem)">
+      <p class="eyebrow"><span class="eyebrow-line"></span>The workflow</p>
+      <h2>Five steps, one disciplined process</h2>
+    </div>
+    <ol class="timeline">
+      <li class="tl-item"><div class="tl-num">01</div><div class="tl-body"><h3>Client profiling</h3><p>We begin by understanding the business — its operations, financials, credit history, and the precise funding requirement.</p></div></li>
+      <li class="tl-item"><div class="tl-num">02</div><div class="tl-body"><h3>Documentation &amp; solutioning</h3><p>The right financing structure is designed and a complete, lender-ready documentation package is assembled.</p></div></li>
+      <li class="tl-item"><div class="tl-num">03</div><div class="tl-body"><h3>Mandate closure</h3><p>Scope, terms, and timelines are agreed and formalized before the proposal moves to lenders.</p></div></li>
+      <li class="tl-item"><div class="tl-num">04</div><div class="tl-body"><h3>Lender submission</h3><p>The pre-vetted profile is presented to matched lenders, accelerating review cycles and approval timelines.</p></div></li>
+      <li class="tl-item"><div class="tl-num">05</div><div class="tl-body"><h3>Disbursal coordination</h3><p>We coordinate approvals, final documentation, and disbursement — with transparent tracking at every milestone.</p></div></li>
+    </ol>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<!-- ═══════════════════════════════════════════════════════════
+     §7 ABOUT
+═══════════════════════════════════════════════════════════ -->
+<section id="about" class="section s-dark" aria-label="About us">
+  <div class="wrap">
+    <div class="section-head gsap-up">
+      <p class="eyebrow"><span class="eyebrow-line"></span>About us</p>
+      <h2>About Crederelink Fintech</h2>
+      <p class="lede">Institutional-grade financial advisory and credit services firm specializing in trade finance, credit structuring, and risk assessment for enterprises and lenders.</p>
+    </div>
+
+    <!-- Mission & Vision -->
+    <div class="mission-split" style="margin-bottom: clamp(3.5rem,7vw,5.5rem)">
+      <div class="mission-block gsap-left">
+        <p class="eyebrow" style="margin-bottom:0.9rem; color: var(--teal);">
+          <svg class="icon" style="width:17px;height:17px" aria-hidden="true"><use href="#target"/></svg>
+          Our mission
+        </p>
+        <h2>Trusted outcomes through discipline</h2>
+        <p>To provide institutional-grade financial advisory and credit services that enable enterprises to optimize capital structures, mitigate risk, and access appropriate financing. We combine deep financial analysis with process discipline to deliver trusted outcomes for clients and lenders.</p>
+      </div>
+      <div class="mission-block gsap-right">
+        <p class="eyebrow" style="margin-bottom:0.9rem; color: var(--teal);">
+          <svg class="icon" style="width:17px;height:17px" aria-hidden="true"><use href="#trending-up"/></svg>
+          Our vision
+        </p>
+        <h2>Transparent capital enablement</h2>
+        <p>To be recognized as the premier financial advisory firm for trade finance, credit structuring, and risk assessment in India. We envision a financial ecosystem where capital enablement is transparent, risk-minimized, and aligned with long-term business sustainability.</p>
+      </div>
+    </div>
+
+    <!-- Values -->
+    <div class="section-head center gsap-up" style="margin-bottom: clamp(2.5rem,5vw,4rem)">
+      <p class="eyebrow"><span class="eyebrow-line"></span>What guides us</p>
+      <h2>Our core values</h2>
+    </div>
+    <div class="values-grid" style="margin-bottom: clamp(3.5rem,7vw,5.5rem)">
+      <article class="value-card"><span class="icon-badge"><svg class="icon" aria-hidden="true"><use href="#scale"/></svg></span><h4>Financial Trust</h4><p>Building long-term relationships through transparent processes, rigorous analysis, and reliable outcomes for clients and lenders.</p></article>
+      <article class="value-card"><span class="icon-badge"><svg class="icon" aria-hidden="true"><use href="#shield-check"/></svg></span><h4>Risk Mitigation</h4><p>Institutional-grade underwriting and documentation-led processes to minimize risk exposure and ensure sustainable financing structures.</p></article>
+      <article class="value-card"><span class="icon-badge"><svg class="icon" aria-hidden="true"><use href="#coins"/></svg></span><h4>Capital Enablement</h4><p>Strategic capital structuring and lender matching to optimize financing terms and enable sustainable business growth.</p></article>
+      <article class="value-card"><span class="icon-badge"><svg class="icon" aria-hidden="true"><use href="#list-checks"/></svg></span><h4>Process Discipline</h4><p>Structured workflows, comprehensive documentation, and systematic approach to ensure consistent, reliable outcomes.</p></article>
+      <article class="value-card"><span class="icon-badge"><svg class="icon" aria-hidden="true"><use href="#users"/></svg></span><h4>Client-First Structuring</h4><p>Personalized financial solutions designed per client requirement, with deep analysis and strategic advisory support.</p></article>
+      <article class="value-card"><span class="icon-badge"><svg class="icon" aria-hidden="true"><use href="#award"/></svg></span><h4>Experience &amp; Expertise</h4><p>Deep financial expertise combined with extensive lender networks and proven track record in credit advisory and structuring.</p></article>
+    </div>
+
+    <!-- CEO Quote -->
+    <figure class="ceo-quote gsap-scale" style="margin-bottom: clamp(3.5rem,7vw,5.5rem)">
+      <div class="ceo-quote-mark" aria-hidden="true">&ldquo;</div>
+      <blockquote>
+        <p>At Crederelink Fintech, we operate with the discipline and rigor expected of institutional financial advisory firms. Our approach combines deep financial analysis, risk assessment, and process discipline to deliver trusted outcomes for enterprises and lenders.</p>
+        <p>Based in Hyderabad, we serve clients across India with specialized expertise in trade finance, credit structuring, and risk advisory. Our team brings decades of combined experience in financial analysis, underwriting, and capital markets. We are committed to enabling sustainable capital structures that support long-term business growth. Thank you for considering Crederelink Fintech for your financial advisory needs.</p>
+      </blockquote>
+      <figcaption class="ceo-figcap">
+        <strong>Suresh Varma</strong>
+        Chief Executive Officer
+      </figcaption>
+    </figure>
+
+    <!-- Addresses -->
+    <div class="section-head gsap-up">
+      <p class="eyebrow"><span class="eyebrow-line"></span>Where we are</p>
+      <h2>Based in Hyderabad, serving India</h2>
+    </div>
+    <div class="address-grid gsap-up">
+      <article class="address-card">
+        <h4><svg class="icon" aria-hidden="true"><use href="#map-pin"/></svg>Office address</h4>
+        <address>
+          <strong>Crederelinkfintech Pvt. Ltd.</strong><br>
+          401A, 4th Floor, Meridian Plaza<br>
+          Ameerpet Road, Greenlands, Begumpet<br>
+          Hyderabad — 500016, Telangana, India
+        </address>
+      </article>
+      <article class="address-card">
+        <h4><svg class="icon" aria-hidden="true"><use href="#landmark"/></svg>Registered address</h4>
+        <address>
+          <strong>Crederelinkfintech Pvt. Ltd.</strong><br>
+          108, Varun Sargam Villa<br>
+          Behind Katriya Hotel, Rajbhavan Road<br>
+          Somajiguda, Hyderabad — 500082<br>
+          Telangana, India
+        </address>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════
+     §8 CTA BAND
+═══════════════════════════════════════════════════════════ -->
+<div class="cta-band">
+  <div class="cta-band-mark" aria-hidden="true"></div>
+  <div class="wrap cta-band-inner">
+    <div class="gsap-up">
+      <h2>Partner with <span class="hi">institutional-grade</span> financial advisory</h2>
+      <p>Trusted by enterprises and lenders for trade finance, credit structuring, and risk advisory services.</p>
+    </div>
+    <div class="gsap-up">
+      <a href="#contact" class="btn btn-primary btn-lg">
+        Get started today
+        <svg class="icon" aria-hidden="true"><use href="#arrow-right"/></svg>
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="section-divider"></div>
+
+<!-- ═══════════════════════════════════════════════════════════
+     §9 CONTACT
+═══════════════════════════════════════════════════════════ -->
+<section id="contact" class="section s-dark" aria-label="Contact">
+  <div class="contact-mark" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="section-head gsap-up">
+      <p class="eyebrow"><span class="eyebrow-line"></span>Contact</p>
+      <h2>Get in touch</h2>
+      <p class="lede">Contact us for institutional-grade financial advisory, trade finance solutions, credit services, or risk assessment inquiries.</p>
+    </div>
+
+    <div class="contact-layout">
+      <!-- Form -->
+      <div class="contact-form-wrap">
+        <div class="contact-form-head">
+          <h2>Send us a message</h2>
+          <p>Tell us about your requirement and we'll get back to you within one business day.</p>
+        </div>
+        <form id="contactForm" class="form-grid" novalidate>
+          <div class="form-field">
+            <label for="name">Full name <span class="req">*</span></label>
+            <input type="text" id="name" name="name" class="input" placeholder="Your full name" autocomplete="name" required>
+          </div>
+          <div class="form-field">
+            <label for="email">Email address <span class="req">*</span></label>
+            <input type="email" id="email" name="email" class="input" placeholder="you@company.com" autocomplete="email" required>
+          </div>
+          <div class="form-field">
+            <label for="phone">Phone number</label>
+            <input type="tel" id="phone" name="phone" class="input" placeholder="+91 ..." autocomplete="tel">
+          </div>
+          <div class="form-field">
+            <label for="subject">Subject</label>
+            <select id="subject" name="subject" class="select">
+              <option value="">Select a subject</option>
+              <option value="supply-chain">Supply Chain Finance</option>
+              <option value="lc-bg">LC / BG Discounting</option>
+              <option value="credit-rating">Credit Rating &amp; CIBIL</option>
+              <option value="underwriting">Underwriting &amp; Risk Review</option>
+              <option value="advisory">Advisory &amp; Consulting</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-field form-field--full">
+            <label for="message">Message <span class="req">*</span></label>
+            <textarea id="message" name="message" class="textarea" placeholder="Tell us how we can help you..." rows="6" required></textarea>
+          </div>
+          <div class="form-field form-field--full">
+            <label class="form-consent">
+              <input type="checkbox" name="consent" required>
+              <span>I agree to be contacted by Crederelink Fintech about my enquiry.</span>
+            </label>
+          </div>
+          <div class="form-field form-field--full form-actions">
+            <p id="formStatus" class="form-status" role="status" aria-live="polite"></p>
+            <button type="submit" class="btn btn-primary btn-lg">Send message</button>
+          </div>
+        </form>
+      </div>
+
+      <!-- Aside -->
+      <aside class="contact-aside">
+        <div class="contact-brand-card">
+          <img src="assets/logo-mark.png" alt="Crederelink Fintech" class="contact-logo" width="88" height="88">
+          <p class="contact-brand-name">Crederelink<em>Fintech</em></p>
+          <p class="contact-brand-tag">Institutional-grade financial advisory · Hyderabad, India</p>
+        </div>
+        <div class="contact-item">
+          <span class="icon-badge"><svg class="icon" aria-hidden="true"><use href="#map-pin"/></svg></span>
+          <div>
+            <h4>Office address</h4>
+            <address>
+              <a href="https://share.google/9SJL8AAdx6wuei2GO" target="_blank" rel="noopener noreferrer">Meridian Plaza, Cluster Malkajgiri 75</a><br>
+              Ameerpet Rd, Greenlands, Begumpet<br>
+              Hyderabad, Telangana 500016, India
+            </address>
+          </div>
+        </div>
+        <div class="contact-item">
+          <span class="icon-badge"><svg class="icon" aria-hidden="true"><use href="#landmark"/></svg></span>
+          <div>
+            <h4>Registered address</h4>
+            <address>
+              108, Varun Sargam Villa<br>
+              Behind Katriya Hotel, Rajbhavan Road<br>
+              Somajiguda, Hyderabad — 500082, Telangana
+            </address>
+          </div>
+        </div>
+        <div class="contact-item">
+          <span class="icon-badge"><svg class="icon" aria-hidden="true"><use href="#mail"/></svg></span>
+          <div>
+            <h4>Email</h4>
+            <p><a href="mailto:info@crederelinkfintech.com">info@crederelinkfintech.com</a></p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <span class="icon-badge"><svg class="icon" aria-hidden="true"><use href="#phone"/></svg></span>
+          <div>
+            <h4>Phone</h4>
+            <p><a href="tel:+917022468301">+91 70224 68301</a></p>
+          </div>
+        </div>
+        <div class="hours-card">
+          <h4><svg class="icon" aria-hidden="true"><use href="#clock"/></svg>Business hours</h4>
+          <dl>
+            <div><dt>Monday – Friday</dt><dd>10:00 AM – 6:00 PM IST</dd></div>
+            <div><dt>Banking Saturdays</dt><dd>10:00 AM – 6:00 PM IST</dd></div>
+            <div><dt>Sunday</dt><dd>Closed</dd></div>
+          </dl>
+        </div>
+      </aside>
+    </div>
+
+    <!-- Map -->
+    <div style="margin-top: clamp(3rem,6vw,4.5rem)">
+      <div class="map-frame">
+        <iframe
+          src="https://www.google.com/maps?q=Meridian+Plaza,+Cluster+Malkajgiri+75,+Ameerpet+Rd,+Greenlands,+Begumpet,+Hyderabad,+Telangana+500016&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Crederelink Fintech office location">
+        </iframe>
+      </div>
+      <div class="map-caption">
+        <span>Meridian Plaza, Ameerpet Rd, Greenlands, Begumpet, Hyderabad 500016</span>
+        <a href="https://share.google/9SJL8AAdx6wuei2GO" target="_blank" rel="noopener noreferrer" class="text-link">
+          Open in Google Maps <svg class="icon" aria-hidden="true"><use href="#arrow-right"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main><!-- /main -->
+
+<!-- ═══════════════════════════════════════════════════════════
+     FOOTER
+═══════════════════════════════════════════════════════════ -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#home" class="brand">
+          <img src="assets/logo-mark.png" alt="" class="brand-mark" width="34" height="34">
+          <span class="brand-name">Crederelink<em>Fintech</em></span>
+        </a>
+        <p>Institutional-grade trade finance, credit structuring, and risk advisory for enterprises and lenders across India.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#supply-chain">Supply Chain &amp; Trade Finance</a></li>
+          <li><a href="#credit-risk">Credit &amp; Risk Services</a></li>
+          <li><a href="#advisory">Advisory &amp; Consulting</a></li>
+          <li><a href="#unsecured">Unsecured Loans</a></li>
+          <li><a href="#exporter">Exporter &amp; Importer Finance</a></li>
+          <li><a href="#allied">Allied Financial Services</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#about">About us</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:info@crederelinkfintech.com">info@crederelinkfintech.com</a></li>
+          <li><a href="tel:+917022468301">+91 70224 68301</a></li>
+        </ul>
+        <address style="margin-top:0.9rem">
+          401A, 4th Floor, Meridian Plaza<br>
+          Ameerpet Road, Greenlands, Begumpet<br>
+          Hyderabad — 500016, Telangana
+        </address>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Crederelinkfintech Pvt. Ltd. All rights reserved.</p>
+      <p>Hyderabad, Telangana, India</p>
+    </div>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
