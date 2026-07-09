@@ -8,3 +8,8 @@ Disallow: /about.html
 Disallow: /contact.html
 
 Sitemap: https://crederelinkfintech.com/sitemap.xml
+
+# Allow favicon and logo assets for Google Search icons
+Allow: /favicon.ico
+Allow: /assets/
+Allow: /site.webmanifest

@@ -1,0 +1,31 @@
+{
+  "name": "Crederelink Fintech",
+  "short_name": "Crederelink",
+  "description": "Trade finance, credit structuring and institutional lending solutions in Hyderabad, India.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#062949",
+  "theme_color": "#062949",
+  "lang": "en-IN",
+  "icons": [
+    {
+      "src": "/assets/favicon.png",
+      "sizes": "48x48",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/logo-mark.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
