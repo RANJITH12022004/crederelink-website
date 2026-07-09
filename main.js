@@ -147,12 +147,12 @@ function isSearchCrawler() {
   );
 }
 
-/* ── CONTACT FORM ───────────────────────────────────────────── */
+/* ── CONTACT FORM (FormSubmit — free, no backend) ─────────── */
 (function () {
   const form   = document.getElementById("contactForm");
   const status = document.getElementById("formStatus");
   if (!form || !status) return;
-  const FORM_URL = "https://formspree.io/f/xdkogzle";
+  const FORM_URL = "https://formsubmit.co/ajax/info@crederelinkfintech.com";
 
   function setStatus(msg, type) {
     status.textContent = msg;
@@ -161,6 +161,8 @@ function isSearchCrawler() {
 
   form.addEventListener("submit", async e => {
     e.preventDefault();
+    if (form.querySelector("[name='_honey']")?.value) return;
+
     let valid = true;
     form.querySelectorAll("[required]").forEach(f => {
       if (f.type === "checkbox" ? !f.checked : !f.value.trim()) valid = false;
@@ -170,19 +172,54 @@ function isSearchCrawler() {
     const btn = form.querySelector("[type='submit']");
     btn.disabled = true; btn.textContent = "Sending…";
 
+    const data = Object.fromEntries(new FormData(form).entries());
+    const subjectLabel = data.subject
+      ? form.querySelector("#subject option:checked")?.textContent?.trim() || data.subject
+      : "General enquiry";
+    const payload = {
+      name: data.name,
+      email: data.email,
+      phone: data.phone || "—",
+      subject: subjectLabel,
+      message: data.message,
+      _subject: `Crederelink website: ${subjectLabel} — ${data.name}`,
+      _replyto: data.email,
+      _template: "table",
+      _captcha: "false",
+    };
+
     try {
-      const res = await fetch(FORM_URL, { method:"POST", headers:{ Accept:"application/json" }, body: new FormData(form) });
-      if (res.ok) { setStatus("Thank you. We'll be in touch within one business day.", "ok"); form.reset(); }
-      else throw new Error("Status " + res.status);
-    } catch (_) {
-      const n = (form.querySelector("#name")  || {}).value || "";
-      const em = (form.querySelector("#email") || {}).value || "";
-      const msg = (form.querySelector("#message") || {}).value || "";
-      setStatus("Direct submission unavailable — opening your email client…", "err");
+      const res  = await fetch(FORM_URL, {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify(payload),
+      });
+      const json = await res.json().catch(() => ({}));
+      const ok   = json.success === true || json.success === "true";
+
+      if (ok) {
+        setStatus("Thank you. We'll be in touch within one business day.", "ok");
+        form.reset();
+      } else if (json.message && /activat/i.test(json.message)) {
+        setStatus(
+          "One-time setup: check info@crederelinkfintech.com (and spam) for a FormSubmit activation email, click the link, then submit again.",
+          "err"
+        );
+      } else {
+        throw new Error(json.message || "Submission failed");
+      }
+    } catch (err) {
+      const n   = data.name || "";
+      const em  = data.email || "";
+      const sub = subjectLabel;
+      const msg = data.message || "";
+      setStatus("Could not send online — opening your email app as a backup…", "err");
       setTimeout(() => {
-        window.location.href = "mailto:info@crederelinkfintech.com?subject=" +
-          encodeURIComponent("Enquiry from " + n) + "&body=" +
-          encodeURIComponent("Name: " + n + "\nEmail: " + em + "\n\n" + msg);
+        window.location.href =
+          "mailto:info@crederelinkfintech.com?subject=" +
+          encodeURIComponent("Website enquiry: " + sub) +
+          "&body=" +
+          encodeURIComponent("Name: " + n + "\nEmail: " + em + "\nPhone: " + (data.phone || "—") + "\nSubject: " + sub + "\n\n" + msg);
       }, 900);
     } finally {
       const b = form.querySelector("[type='submit']");

@@ -1230,6 +1230,7 @@ h4 { font-size: 1.05rem; }
 }
 
 /* ── 17. FORMS ──────────────────────────────────────────────── */
+.form-honey { position: absolute; left: -9999px; width: 0; height: 0; opacity: 0; pointer-events: none; }
 .form-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.2rem; }
 .form-field { display: grid; gap: 6px; min-width: 0; }
 .form-field--full { grid-column: 1 / -1; }
